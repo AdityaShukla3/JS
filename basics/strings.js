@@ -24,17 +24,17 @@ console.log(nam.indexOf('t'));      //3
 console.log(nam.substring(0,4));    //Adit                  if we put negative value here then it will ignore them start from initial
  
 let str=nam.slice(0,4)                  //                  we can use negative values here as negatve means from last
-console.log(str);
+console.log(str);                       //Adit
 str=nam.slice(-1,4);
-console.log(str);
+console.log(str);                       //Adit
 
 let s1="        Adi      "
 console.log(s1);          // same as above
 console.log(s1.trim());   //Adi
 
 let url="https://netflix.com"
-console.log(url.replace(".com","@gmail"));
-console.log(url.includes("net"));
+console.log(url.replace(".com","@gmail"));      //https://netflix@gmail
+console.log(url.includes("net"));               //true
 
 let s2="Adi-tya-Shu-kla"
-console.log(s2.split('-'));
+console.log(s2.split('-'));         //[ 'Adi', 'tya', 'Shu', 'kla' ]

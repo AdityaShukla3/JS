@@ -2,7 +2,7 @@
 
 //alert("hello")   --> Will not work directly in node but will work in browser
 //                  --> Used for popup
-//console.log(3+3);
+//console.log(3+3);       //6
 
 let age=20
 let name="Adi"
@@ -15,7 +15,7 @@ let isLoggedIn=true;
 // boolean
 // null
 // undefined
-// symbol  ---> unique
+// symbol           ---> unique
 
 //                       Non-Primitive
 //object

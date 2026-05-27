@@ -8,7 +8,7 @@ arr.push(6);
 console.log(arr);           //[1,2,3,4,5,6]
 
 arr.pop();
-console.log(arr);
+console.log(arr);           //[ 1, 2, 3, 4, 5 ]
 
 arr.unshift(0);            //added to starting of array
 console.log(arr);           //[ 0, 1, 2, 3, 4, 5 ]
@@ -16,11 +16,11 @@ console.log(arr);           //[ 0, 1, 2, 3, 4, 5 ]
 arr.shift();                // remove first element from starting of array
 console.log(arr);           //[ 1, 2, 3, 4, 5 ]
 
-console.log(arr.includes(5));
-console.log(arr.includes(6));
+console.log(arr.includes(5));     //true
+console.log(arr.includes(6));       //false
 
-console.log(arr.indexOf(2));
-console.log(arr.indexOf(0));
+console.log(arr.indexOf(2));        //1
+console.log(arr.indexOf(0));        //-1
 
 const newArr=arr.join();
 console.log(arr);           //[ 1, 2, 3, 4, 5 ]
@@ -66,4 +66,4 @@ console.log(Array.from({name:"Aditya"}));    //[] empty array because it can not
 let c1=1
 let c2=2
 let c3=3
-console.log(Array.of(c1,c2,c3));
+console.log(Array.of(c1,c2,c3));        //[ 1, 2, 3 ]
