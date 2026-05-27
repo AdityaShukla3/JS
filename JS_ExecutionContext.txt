@@ -1,0 +1,47 @@
+i)First Global Execution Context({}) is created which is refererred by this keyword 
+ii)FUnction Execution Context
+In Mongoose
+iii) Eval Execution Context
+
+JS CODE --> 1)  Memory Creation Phase  (Only memory is allocated no execution is being done)
+            2)  Execution Phase         
+
+let val1=10
+let val2=5
+function sum(a,b){
+    let total=a+b
+    return total;
+}           
+let res1=sum(val1,val2)
+let res2=sum(10,2)
+
+1) Global Execution(or GLobal Environment)  --> this
+
+2) Memory Phase (val1-> undefined,
+                val2-> undefined
+                sum-> definition       //definition means line 12 to 13
+                res1-> undefined
+                res2-> undefined
+                )
+
+3)Execution Phase (val1->10,
+    val2->5                           __________________________
+    sum  ->     Execution Context     |New Variable Environment|                            (this execution Contextis deleted after execution of fn call)
+                                      |         +              |
+    res1->15                          |Execution Thread        |
+                                       _________________________
+
+                                        |
+                                        |--------------------------------------------------->
+                                        -->Memory Phase (val1-> undefined,                  Execution Phase(val1->10,
+                                                                                                            val2->5
+                                                                                                            total->15
+                                                                                                    )                 (this total is returned to Global Execution)
+                                                        val2-> undefined
+                                                        total-> undefined
+                                        )
+    now again sum is called then again these steps 
+)               
+
+
+Call stack is created for funcions 
