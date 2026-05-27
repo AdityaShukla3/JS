@@ -22,3 +22,14 @@ console.log("2"===2); //false
 //type check bhi krta hai data type change hote hi false
 console.log("2"==2);    //true
 
+//Null Coalescing Operator
+
+let a;
+a= 1 ?? 2;
+console.log(a);             //1     (first not-null value is being returned)
+
+a= null??1;                 //null will not be included
+console.log(a);             //1
+
+a= undefined??1;
+console.log(a);         // 1
