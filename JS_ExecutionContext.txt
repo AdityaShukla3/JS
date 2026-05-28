@@ -29,7 +29,7 @@ let res2=sum(10,2)
     sum  ->     Execution Context     |New Variable Environment|                            (this execution Contextis deleted after execution of fn call)
                                       |         +              |
     res1->15                          |Execution Thread        |
-                                       _________________________
+                                      |________________________|
 
                                         |
                                         |--------------------------------------------------->
